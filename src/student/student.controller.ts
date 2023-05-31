@@ -45,7 +45,7 @@ export class StudentController {
             return response.status(HttpStatus.OK).json({
                 message: 'Student has been successfully updated',
                 existingStudent,
-            })
+            });
         } catch (err) {
             return response.status(err.status).json(err.response);
         }
@@ -58,7 +58,7 @@ export class StudentController {
             return response.status(HttpStatus.OK).json({
                 message: 'Student Deleted Successfully',
                 deletedStudent,
-            })
+            });
         } catch (err) {
             return response.status(err.status).json(err.response);
         }
